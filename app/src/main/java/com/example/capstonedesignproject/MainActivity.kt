@@ -73,12 +73,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.menu_hospital -> {
-                // Navigate to NearbyHospitalActivity
-                val intent = Intent(this, NearbyHospitalActivity::class.java)
-                startActivity(intent)
-                return@OnNavigationItemSelectedListener true
-            }
+//            R.id.menu_hospital -> {
+//                // Navigate to NearbyHospitalActivity
+//                val intent = Intent(this, NearbyHospitalActivity::class.java)
+//                startActivity(intent)
+//                return@OnNavigationItemSelectedListener true
+//            }
             R.id.menu_chatbot -> {
                 // Navigate to ChatbotActivity
                 val intent = Intent(this, ChatbotActivity::class.java)
