@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#eeeeee">
+
+    <TextView
+        android:id="@+id/textapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/open_sansb"
+        android:text="HeartSync"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bussiness_man"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_bpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textapp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/image_bpm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/bpm" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/bpmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/image_bpm"
+            android:fontFamily="@font/open_sans"
+            android:text="Beats per Minute: "
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/bpmTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/bpmText"
+            android:fontFamily="@font/open_sans"
+            android:text="120"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_body_temp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_bpm"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/image_body_temp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/body_temp" />
+
+        <TextView
+            android:id="@+id/bodyTemperatureText"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_body_temp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Body Temp" />
+
+        <TextView
+            android:id="@+id/bodyTemperatureTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/image_body_temp"
+            android:fontFamily="@font/open_sans"
+            android:text="36°C"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_air_quality"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_bpm"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/lay_body_temp"
+        android:background="@drawable/rounded"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/image_air_quality"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/air_quality" />
+
+        <TextView
+            android:id="@+id/airQualityText"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_air_quality"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Air Quality" />
+
+        <TextView
+            android:id="@+id/airQualityTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/image_air_quality"
+            android:fontFamily="@font/open_sans"
+            android:text="70%"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_room_temp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_body_temp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/image_room_temp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/room_temp" />
+
+        <TextView
+            android:id="@+id/roomTemperatureText"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_room_temp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Room Temp" />
+
+        <TextView
+            android:id="@+id/roomTemperatureTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/image_room_temp"
+            android:fontFamily="@font/open_sans"
+            android:text="26°C"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_room_humid"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_air_quality"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/lay_room_temp"
+        android:background="@drawable/rounded"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/image_room_humid"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/humidText"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_room_humid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Humidity" />
+
+        <TextView
+            android:id="@+id/roomHumidityTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/image_room_humid"
+            android:fontFamily="@font/open_sans"
+            android:text="60%"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_room_humid"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:hint="Age"/>
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAge"
+        android:layout_marginTop="19dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSaveData"
+        android:layout_marginTop="19dp"
+        android:text="Analyze" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@xml/bottom_navigation_menu" />
+
+
+</RelativeLayout>

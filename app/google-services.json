@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "155628774170",
+    "firebase_url": "https://capstoneproject-415506-default-rtdb.firebaseio.com",
+    "project_id": "capstoneproject-415506",
+    "storage_bucket": "capstoneproject-415506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155628774170:android:6d5e7b7dd04003f0b882a3",
+        "android_client_info": {
+          "package_name": "com.example.capstonedesignproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc0gwB0k43Wfde5X7SK65U6605TOJGmZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

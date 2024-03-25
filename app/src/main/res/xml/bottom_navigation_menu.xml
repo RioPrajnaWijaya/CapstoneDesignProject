@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/menu_history"
+        android:title="History"
+        android:icon="@drawable/ic_history" />
+
+    <item
+        android:id="@+id/menu_hospital"
+        android:title="Hospital"
+        android:icon="@drawable/ic_hospital" />
+
+    <item
+        android:id="@+id/menu_chatbot"
+        android:title="Chatbot"
+        android:icon="@drawable/ic_chatbot" />
+</menu>
